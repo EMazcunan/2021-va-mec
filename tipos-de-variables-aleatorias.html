@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1.3 Tipos de variables aleatorias | Variables Aleatorias - Vídeos</title>
+  <meta name="description" content="1.3 Tipos de variables aleatorias | Variables Aleatorias - Vídeos" />
+  <meta name="generator" content="bookdown 0.21.7 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1.3 Tipos de variables aleatorias | Variables Aleatorias - Vídeos" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="EMazcunan/2021-va-mec" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1.3 Tipos de variables aleatorias | Variables Aleatorias - Vídeos" />
+  
+  
+  
+
+<meta name="author" content="Eva María Mazcuñán Navarro" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sucesos-definidos-por-una-variable-aleatoria.html"/>
+<link rel="next" href="distribución-de-una-variable-aleatoria.html"/>
+<script src="libs/header-attrs-2.7.4/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<!--
+Material Icons
+https://fonts.google.com/icons
+https://developers.google.com/fonts/docs/material_icons
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<span class="math inline" style="display: none;">
+    \(\newcommand{\ve}{\varepsilon}\)
+</span>
+<span class="math inline", style="display: none;">
+\(\newcommand{\foo}{}\)
+</span>
+
+
+
+
+<link rel="stylesheet" href="egitbook/chunks.css" type="text/css" />
+<link rel="stylesheet" href="egitbook/latex.css" type="text/css" />
+<link rel="stylesheet" href="egitbook/enotation.css" type="text/css" />
+<link rel="stylesheet" href="egitbook/ebox.css" type="text/css" />
+<link rel="stylesheet" href="egitbook/emargintag.css" type="text/css" />
+<link rel="stylesheet" href="egitbook/emedia.css" type="text/css" />
+<link rel="stylesheet" href="egitbook/mnye.css" type="text/css" />
+<link rel="stylesheet" href="egitbook/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Variables Aleatorias - Vídeos</a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html"><i class="fa fa-check"></i>Requisitos previos</a></li>
+<li class="chapter" data-level="1" data-path="va.html"><a href="va.html"><i class="fa fa-check"></i><b>1</b> Variables aleatorias</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="definición-de-variable-aleatoria.html"><a href="definición-de-variable-aleatoria.html"><i class="fa fa-check"></i><b>1.1</b> Definición de variable aleatoria</a></li>
+<li class="chapter" data-level="1.2" data-path="sucesos-definidos-por-una-variable-aleatoria.html"><a href="sucesos-definidos-por-una-variable-aleatoria.html"><i class="fa fa-check"></i><b>1.2</b> Sucesos definidos por una variable aleatoria</a></li>
+<li class="chapter" data-level="1.3" data-path="tipos-de-variables-aleatorias.html"><a href="tipos-de-variables-aleatorias.html"><i class="fa fa-check"></i><b>1.3</b> Tipos de variables aleatorias</a></li>
+<li class="chapter" data-level="1.4" data-path="distribución-de-una-variable-aleatoria.html"><a href="distribución-de-una-variable-aleatoria.html"><i class="fa fa-check"></i><b>1.4</b> Distribución de una variable aleatoria</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="distribución-de-una-variable-aleatoria.html"><a href="distribución-de-una-variable-aleatoria.html#función-de-distribución-acumulativa"><i class="fa fa-check"></i><b>1.4.1</b> Función de distribución acumulativa</a></li>
+<li class="chapter" data-level="1.4.2" data-path="distribución-de-una-variable-aleatoria.html"><a href="distribución-de-una-variable-aleatoria.html#modelos-de-distribución-para-una-variable-aleatoria"><i class="fa fa-check"></i><b>1.4.2</b> Modelos de distribución para una variable aleatoria</a></li>
+<li class="chapter" data-level="1.4.3" data-path="distribución-de-una-variable-aleatoria.html"><a href="distribución-de-una-variable-aleatoria.html#media-y-varianza-de-una-variable-aleatoria"><i class="fa fa-check"></i><b>1.4.3</b> Media y varianza de una variable aleatoria</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="discrete.html"><a href="discrete.html"><i class="fa fa-check"></i><b>2</b> Variables aleatorias discretas</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="función-de-masa-de-probabilidad.html"><a href="función-de-masa-de-probabilidad.html"><i class="fa fa-check"></i><b>2.1</b> Función de masa de probabilidad</a></li>
+<li class="chapter" data-level="2.2" data-path="variables-aleatorias-binomiales.html"><a href="variables-aleatorias-binomiales.html"><i class="fa fa-check"></i><b>2.2</b> Variables aleatorias binomiales</a></li>
+<li class="chapter" data-level="2.3" data-path="variables-aleatorias-de-poisson.html"><a href="variables-aleatorias-de-poisson.html"><i class="fa fa-check"></i><b>2.3</b> Variables aleatorias de Poisson</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="continuous.html"><a href="continuous.html"><i class="fa fa-check"></i><b>3</b> Variables aleatorias continuas</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="función-de-densidad-de-probabilidad.html"><a href="función-de-densidad-de-probabilidad.html"><i class="fa fa-check"></i><b>3.1</b> Función de densidad de probabilidad</a></li>
+<li class="chapter" data-level="3.2" data-path="variables-aleatorias-normales.html"><a href="variables-aleatorias-normales.html"><i class="fa fa-check"></i><b>3.2</b> Variables aleatorias normales</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><ul>
+<li style="margin: 10px 0;">
+Creado con <a style="display:inline;padding-left:0px;padding-right:0px;" href="https://bookdown.org/yihui/bookdown/" target="blank">bookdown</a>
+</li>
+<li style="margin: 10px 0;">
+Publicado con <a style="display:inline;padding:0px;" href="https://pages.github.com/bookdown/" target="blank">GitHub Pages</a>
+</li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Variables Aleatorias - Vídeos</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+
+<div id="tipos-de-variables-aleatorias" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Tipos de variables aleatorias</h2>
+<div class="edpuzzlecontainer" style="width:100%!important;padding-bottom: calc(calc(0.5625*100%) + 140px + 50px )!important;">
+<iframe src="https://edpuzzle.com/embed/assignments/6096c687451c8641b95249ed/watch" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+</div>
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sucesos-definidos-por-una-variable-aleatoria.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="distribución-de-una-variable-aleatoria.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": null
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["T6-va-mec.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+va
+definición-de-variable-aleatoria
+sucesos-definidos-por-una-variable-aleatoria
+tipos-de-variables-aleatorias
+distribución-de-una-variable-aleatoria
+función-de-distribución-acumulativa
+modelos-de-distribución-para-una-variable-aleatoria
+media-y-varianza-de-una-variable-aleatoria
+discrete
+función-de-masa-de-probabilidad
+variables-aleatorias-binomiales
+variables-aleatorias-de-poisson
+continuous
+función-de-densidad-de-probabilidad
+variables-aleatorias-normales
